@@ -18,6 +18,7 @@ $(document).ready(function () {
       $("#step" + step).removeClass("hidden");
     } else {
       $("#congratulations").removeClass("hidden");
+      $("#top-number").addClass("hidden");
     }
     $("#stepIndicator" + step).addClass("active");
     $("#stepImage").attr("src", images[step]);  // Update image based on step
@@ -38,6 +39,7 @@ $(document).ready(function () {
     updateStep(currentStep);
     $("#surveyForm").removeClass("hidden");
     $("#intro").addClass("hidden");
+    $("#top-number").removeClass("hidden");
     $(".intro-overlay").addClass("hidden");
   });
 
